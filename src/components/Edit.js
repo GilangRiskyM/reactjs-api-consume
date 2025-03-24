@@ -79,9 +79,7 @@ const Edit = () => {
             value={mahasiswaField.nis ?? ""}
             onChange={changeMahasiswaFieldHandler}
           />
-          {errors.nis && (
-            <div className="invalid-feedback">{errors.nis[0]}</div>
-          )}
+          {errors.nis && <div className="invalid-feedback">{errors.nis}</div>}
         </div>
         <div className="mb-3">
           <label className="form-label">Nama</label>
@@ -93,9 +91,7 @@ const Edit = () => {
             value={mahasiswaField.nama ?? ""}
             onChange={changeMahasiswaFieldHandler}
           />
-          {errors.nama && (
-            <div className="invalid-feedback">{errors.nama[0]}</div>
-          )}
+          {errors.nama && <div className="invalid-feedback">{errors.nama}</div>}
         </div>
         <div className="mb-3">
           <label className="form-label">Kelas</label>
@@ -108,7 +104,7 @@ const Edit = () => {
             onChange={changeMahasiswaFieldHandler}
           />
           {errors.kelas && (
-            <div className="invalid-feedback">{errors.kelas[0]}</div>
+            <div className="invalid-feedback">{errors.kelas}</div>
           )}
         </div>
         <div className="mb-3">
@@ -122,7 +118,7 @@ const Edit = () => {
             onChange={changeMahasiswaFieldHandler}
           />
           {errors.jurusan && (
-            <div className="invalid-feedback">{errors.jurusan[0]}</div>
+            <div className="invalid-feedback">{errors.jurusan}</div>
           )}
         </div>
         <center>
